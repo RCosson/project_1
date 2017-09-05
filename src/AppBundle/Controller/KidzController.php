@@ -16,14 +16,14 @@ class KidzController extends Controller {
   }
 
   /**
-   * @Route("/mentions-legales")
+   * @Route("/mentions-legales", name="mentions")
    */
   public function mentionsAction() {
     return $this->render('kidz/mentions.html.twig');
   }
 
   /**
-   * @Route("/credits")
+   * @Route("/credits", name="credits")
    */
   public function creditsAction() {
     return $this->render('kidz/credits.html.twig');

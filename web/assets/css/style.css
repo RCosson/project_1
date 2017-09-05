@@ -1,5 +1,11 @@
+/*@font-face {
+	font-family: "apple";
+	src: url("/assets/fonts/San_Francisco_Pro.pkg");
+}*/
+
 body {
 	background-color: lightgrey;
+	margin: 0;
 }
 
 .content {
@@ -30,8 +36,8 @@ body {
 
 .slide {
 	width: 1280px;
-	background-color: white;
 	position: relative;
+	background-color: teal;
 	display: block;
 }
 
@@ -50,12 +56,13 @@ body {
 
 .slick-dots li button {
 	border-radius: 100%;
-	background-color: black;
+	background-color: transparent;
+	border: 2px solid white;
 	/*à changer pour utiliser les images données*/
 	text-indent: -9999px;
     overflow:hidden;
-    border: none;
     margin: 5px;
+    height: 
 }
 
 .slide-son {
@@ -64,7 +71,9 @@ body {
 	width: 425px;
 	bottom: 100px;
 	left: 100px;
-	border: 2px solid black;
+	padding: 20px;
+	border: 2px solid white;
+	color: white;
 }
 
 .slick-prev:after {
@@ -96,7 +105,15 @@ body {
 	background-color: grey;
 }
 
-.top-info-slider {
+.top-info {
+	background-color: rgb(227,233,225);
+}
+
+.top-info-static h1 {
+	margin-top: 0;
+}
+
+.top-info-carousel {
 	width: 860px;
 	height: 390px;
 	background-color: grey;
@@ -106,7 +123,7 @@ body {
 
 .top-info-slide {
 	visibility: hidden;
-	/*!!!!!!! A ABSOLUMENT SUPPRIMER QUAND JE FERAI CE SLIDER !!!!!! */
+	/*!!!!!!! A ABSOLUMENT MODIFIER QUAND JE FERAI CE SLIDER !!!!!! */
 }
 
 .middle-info {
@@ -114,9 +131,39 @@ body {
 	width: 870px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: grey;
+}
+
+.middle-info-carousel {
+	background-color: silver;
 }
 
 .middle-info-slide {
 	visibility: hidden;
-	/*!!!!!!! A ABSOLUMENT SUPPRIMER QUAND JE FERAI CE SLIDER !!!!!! */
+	/*!!!!!!! A ABSOLUMENT MODIFIER QUAND JE FERAI CE SLIDER !!!!!! */
+}
+
+.bottom-contact {
+	height: 571px;
+	background-color: silver;
+}
+
+.bottom-illustration {
+	height: 635px;
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: grey;
+}
+
+.bottom-menu {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.bottom-line {
+	height: 80px;
+	width: 100%;
+	background-color: rgb(1,80,119);
 }
