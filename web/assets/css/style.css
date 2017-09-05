@@ -19,18 +19,48 @@ body {
 	list-style: none;
 }
 
+.top-nav-div li {
+	margin: 5px;
+}
+
+.top-nav-div a {
+	color: black;
+	text-decoration: none;
+}
+
 .slide {
-	min-height: 513px;
 	width: 1280px;
 	background-color: white;
 	position: relative;
 	display: block;
 }
 
+.slick-slide {
+	min-height: 513px;
+}
+
+ .slick-dots {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.slick-dots li button {
+	border-radius: 100%;
+	background-color: black;
+	/*à changer pour utiliser les images données*/
+	text-indent: -9999px;
+    overflow:hidden;
+    border: none;
+    margin: 5px;
+}
+
 .slide-son {
-	/*position: absolute;
+	position: absolute;
 	height: 250px;
-	bottom: 100px;*/
+	width: 425px;
+	bottom: 100px;
 	left: 100px;
 	border: 2px solid black;
 }
+

@@ -3,5 +3,6 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpedd: 2000,
+		dots: true,
 	});
 });
