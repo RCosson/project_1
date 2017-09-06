@@ -59,7 +59,7 @@ body {
 }
 
 .top-nav .main-menu a:hover {
-	border-image: url("../img/traits-menu.png") 20;
+	border-image: url("../img/traits-menu.png") 7;
 	border-style: solid;
 	border-width: 7px;
 	border-left: 0;
@@ -88,6 +88,11 @@ body {
 	display: block;
 }
 
+.slide img {
+	max-height: 431px;
+	max-width: 1280px;
+}
+
 .carousel-top .slick-slide {
 	min-height: 513px;
 }
@@ -106,7 +111,6 @@ body {
 	background-image: url("../img/top-carousel/empty.png");
 	background-repeat: no-repeat;
 	border: 0px;
-	/*à changer pour utiliser les images données*/
 	text-indent: -9999px;
     overflow:hidden;
     margin: 2px;
@@ -188,7 +192,7 @@ body {
 	z-index: 1000;
 }
 
-.next-arrow:hover, .prev-arrow:hover, .slick-dots li button {
+.next-arrow:hover, .prev-arrow:hover, .slick-dots li button, .top-info-carousel .slick-dots li {
 	cursor: pointer;
 }
 
@@ -201,6 +205,7 @@ body {
 
 .top-info {
 	background-color: rgb(227,233,225);
+	margin-bottom: 50px;
 }
 
 .top-info-static {
@@ -239,6 +244,10 @@ body {
 	margin-right: auto;
 }
 
+.top-info-carousel .slick-dots .slick-active button {
+	font-weight: bold;
+}
+
 .top-info-carousel .slick-dots {
 	display: flex;
 	list-style: none;
@@ -249,15 +258,22 @@ body {
 	position: absolute;
 }
 
-/*.top-info-carousel .slick-dots button {
-	visibility: hidden;
-}*/
-
-.top-info-carousel .slick-dots button/*:after*/ {
-	/*visibility: visible;*/
+.top-info-carousel .slick-dots button {
 	width: 172px;
 	padding: 0;
 	margin: 0;
+	font-family: "sf";
+	font-size: 30px;
+	color: #004466;
+}
+
+.top-info-carousel .slick-dots li {
+	border-image: url("../img/separateur.png") 5;
+	border-style: solid;
+	border-width: 7px;
+	border-left: 0;
+	border-bottom: 0;
+	border-top: 0;
 }
 
 .top-info-carousel .slick-dots #slick-slide10 button {
@@ -306,8 +322,46 @@ body {
 	content: 'Groupe Sodexo';
 }
 
+.slick-initialized .slick-slide {
+	display: flex;
+}
+
 .top-info-slide {
-	
+	padding-top: 160px;
+	display: flex;
+	flex-direction: row;
+}
+
+.top-info-slide img {
+	height: 210px;
+	width: 290px;
+}
+
+.custom-list {
+	list-style-image: url('/assets/img/tiret-1.png');
+	margin-top: 0;
+}
+
+.custom-list li {
+	font-family: "rale";
+	color: #004466;
+	letter-spacing: 1px;
+	font-size: 14px;
+	margin-bottom: 15px;
+	width: 380px;
+	margin-bottom: 8px;
+}
+
+.custom-list li h1 {
+	font-family: "house";
+	font-size: 18px;
+	font-weight: lighter;
+	padding: 0;
+	margin: 0;
+}
+
+.custom-list li p {
+	margin: 0;
 }
 
 .middle-info {
@@ -315,7 +369,34 @@ body {
 	width: 870px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: grey;
+	background-color: white;
+}
+
+.middle-info-upper {
+	text-align: center;
+}
+
+.middle-info-upper h1 {
+	font-family: "house";
+	font-size: 60px;
+	font-weight: lighter;
+	padding: 0;
+	margin: 0;
+	letter-spacing: 1px;
+	color: #015078;
+}
+
+.middle-info-upper p {
+	font-family: "sf";
+	width: 518px;
+	font-size: 14px;
+	color: #004466;
+}
+
+.middle-info-p {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .middle-info-carousel {
