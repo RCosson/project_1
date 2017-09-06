@@ -1,18 +1,15 @@
 $(document).ready(function(){
 	$(".carousel-top").slick({
-		nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-  		prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
+		nextArrow: '<img class="next-arrow" src="assets/img/top-carousel/fleche_slide_droite.png">',
+  		prevArrow: '<img class="prev-arrow" src="assets/img/top-carousel/fleche_slide_gauche.png">',
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 5000,
+		/*autoplay: true,
+		autoplaySpeed: 5000,*/
 		dots: true,
 	});
 	$(".top-info-carousel").slick({
-		nextArrow: '<i class="fa fa-chevron-right" aria-hidden="true"></i>',
-  		prevArrow: '<i class="fa fa-chevron-left" aria-hidden="true"></i>',
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 5000,
+		autoplay: false,
 		dots: true,
 	});
 });

@@ -1,10 +1,24 @@
-/*@font-face {
-	font-family: "apple";
-	src: url("/assets/fonts/San_Francisco_Pro.pkg");
-}*/
+@font-face {
+	font-family: "sf";
+	src: url("/assets/fonts/SanFranciscoText-Regular.otf");
+}
+
+@font-face {
+	font-family: "house";
+	src: url("/assets/fonts/HouseARamaLeagueNight.ttf");
+}
+
+@font-face {
+	font-family: "rale";
+	src: url("/assets/fonts/Raleway-Regular.ttf");
+}
+
+* {
+	font-family: "sf";
+}
 
 body {
-	background-color: lightgrey;
+	background-color: black;
 	margin: 0;
 }
 
@@ -12,14 +26,24 @@ body {
 	width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: white;
+}
+
+.logo {
+	margin: 5px;
+	padding: 10px;
 }
 
 .top-nav {
 	height: 83px;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	margin-right: 155px;
+	margin-left: 155px;
 }
 
 .top-nav ul {
-	float: right;
 	display: flex;
 	flex-direction: row;
 	list-style: none;
@@ -27,14 +51,46 @@ body {
 
 .top-nav li {
 	margin: 5px;
+	padding: 10px;
+	float: right;
 }
 
 .top-nav a {
-	color: black;
+	color: #015078;
 	text-decoration: none;
+	font-size: 16px;
+}
+
+.top-nav .main-menu a:hover {
+	border-image: url("../img/traits-menu.png") 20;
+	border-style: solid;
+	border-width: 7px;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+}
+
+
+.red-square {
+	border: 2px solid #D1423D;
+	border-radius: 5px;
+	border-image: 0;
+}
+
+.red-square a {
+	color: #D1423D;
+}
+
+.carousel-top, .slick-track, .slick-list {
+	max-height: 431px;
+}
+
+.slick-slide {
+	max-height: 431px;
 }
 
 .slide {
+	max-height: 431px;
 	width: 1280px;
 	position: relative;
 	background-color: teal;
@@ -50,19 +106,25 @@ body {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 450px;
+    top: 350px;
     left: 538px;
 }
 
 .slick-dots li button {
-	border-radius: 100%;
 	background-color: transparent;
-	border: 2px solid white;
+	background-image: url("../img/top-carousel/empty.png");
+	background-repeat: no-repeat;
+	border: 0px;
 	/*à changer pour utiliser les images données*/
 	text-indent: -9999px;
     overflow:hidden;
-    margin: 5px;
-    height: 
+    margin: 2px;
+}
+
+.slick-dots .slick-active button {
+	background-image: url("../img/top-carousel/full.png");
+	background-repeat: no-repeat;
+	border: 0,0,0,0;
 }
 
 .slide-son {
@@ -71,9 +133,50 @@ body {
 	width: 425px;
 	bottom: 100px;
 	left: 100px;
-	padding: 20px;
-	border: 2px solid white;
+	padding: 20px 40px 40px 40px;
 	color: white;
+}
+
+.slide-son-1 {
+	background-image: url("../img/top-carousel/contour_texte_slide_1.png");
+	background-repeat: no-repeat;
+}
+
+.slide-son-2 {
+	background-image: url("../img/top-carousel/contour_texte_slide_2.png");
+	background-repeat: no-repeat;
+}
+
+.slide-son-3 {
+	background-image: url("../img/top-carousel/contour_texte_slide_3.png");
+	background-repeat: no-repeat;
+}
+
+.slide-son-4 {
+	background-image: url("../img/top-carousel/contour_texte_slide_4.png");
+	background-repeat: no-repeat;
+}
+
+.slide-son-5 {
+	background-image: url("../img/top-carousel/contour_texte_slide_5.png");
+	background-repeat: no-repeat;
+}
+
+.slide-son h1 {
+	font-family: "house";
+	font-weight: lighter;
+	font-size: 48px;
+	margin: 0;
+	padding: 0;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+}
+
+.slide-son p {
+	font-family: "rale";
+}
+
+.slide-son img {
+	z-index: 1000;
 }
 
 .slick-prev:after {
@@ -84,29 +187,31 @@ body {
 	content: "<i class="fa fa-chevron-left" aria-hidden="true"></i>";
 }
 
-.fa-chevron-right {
+.next-arrow {
 	position: absolute;
 	right: 37px;
-	top: 255px;
-}
-
-.fa-chevron-right:hover, .fa-chevron-left:hover, .slick-dots li button {
-	cursor: pointer;
-}
-
-.fa-chevron-left {
-	position: absolute;
-	left: 37px;
-	top: 255px;
+	top: 192px;
 	z-index: 1000;
 }
 
-.slick-dots .slick-active button {
-	background-color: grey;
+.next-arrow:hover, .prev-arrow:hover, .slick-dots li button {
+	cursor: pointer;
+}
+
+.prev-arrow {
+	position: absolute;
+	left: 37px;
+	top: 192px;
+	z-index: 1000;
 }
 
 .top-info {
 	background-color: rgb(227,233,225);
+}
+
+.top-info-static {
+	margin-left: 126px;
+	margin-right: 126px;
 }
 
 .top-info-static h1 {
