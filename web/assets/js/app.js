@@ -9,6 +9,13 @@ $(document).ready(function(){
 	});
 	$(".top-info-carousel").slick({
 		slidesToScroll: 1,
+		nextArrow: false,
+		prevArrow: false,
+		autoplay: false,
+		dots: true,
+	});
+	$(".middle-info-carousel").slick({
+		slidesToScroll: 1,
 		autoplay: false,
 		dots: true,
 	});
