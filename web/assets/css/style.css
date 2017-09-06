@@ -13,10 +13,6 @@
 	src: url("/assets/fonts/Raleway-Regular.ttf");
 }
 
-* {
-	font-family: "sf";
-}
-
 body {
 	background-color: black;
 	margin: 0;
@@ -58,6 +54,7 @@ body {
 .top-nav a {
 	color: #015078;
 	text-decoration: none;
+	font-family: "sf";
 	font-size: 16px;
 }
 
@@ -81,16 +78,10 @@ body {
 	color: #D1423D;
 }
 
-.carousel-top, .slick-track, .slick-list {
-	max-height: 431px;
+.carousel-top, .slick-track, .slick-list, .slick-slide, .slide {
+	max-height: 410px;
 }
-
-.slick-slide {
-	max-height: 431px;
-}
-
 .slide {
-	max-height: 431px;
 	width: 1280px;
 	position: relative;
 	background-color: teal;
@@ -145,6 +136,7 @@ body {
 .slide-son-2 {
 	background-image: url("../img/top-carousel/contour_texte_slide_2.png");
 	background-repeat: no-repeat;
+	width: 560px;
 }
 
 .slide-son-3 {
@@ -173,6 +165,8 @@ body {
 
 .slide-son p {
 	font-family: "rale";
+	width: 348px;
+	text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
 }
 
 .slide-son img {
@@ -212,10 +206,29 @@ body {
 .top-info-static {
 	margin-left: 126px;
 	margin-right: 126px;
+	padding-top: 34px;
 }
 
 .top-info-static h1 {
 	margin-top: 0;
+	margin-bottom: 0;
+	font-family: "house";
+	font-size: 48px;
+	font-weight: lighter;
+	color: #015078;
+}
+
+.top-info-static h1:nth-child(2n) {
+	margin-top: -22px;
+}
+
+.top-info-static p {
+	font-family: "rale";
+	font-size: 13px;
+	letter-spacing: 1px;
+	width: 634px;
+	color: #015078;
+	font-weight: 500;
 }
 
 .top-info-carousel {
