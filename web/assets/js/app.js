@@ -12,6 +12,7 @@ $(document).ready(function(){
 		nextArrow: false,
 		prevArrow: false,
 		autoplay: false,
+		speed: 275,
 		dots: true,
 	});
 	$('.middle-info-carousel').slick({
@@ -19,7 +20,7 @@ $(document).ready(function(){
 		slidesToScroll: 1,
  		arrows: false,
  		dots: false,
- 		speed: 250,
+ 		speed: 275,
  		asNavFor: '.slider-nav',
 	});
 	$('.slider-nav').slick({
