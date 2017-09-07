@@ -314,7 +314,6 @@ body {
 
 .top-info-carousel .slick-dots #slick-slide14 button {
 	visibility: hidden;
-	content: 'Groupe Sodexo';
 }
 
 .top-info-carousel .slick-dots #slick-slide14 button:after {
@@ -401,6 +400,7 @@ body {
 
 .middle-info-carousel {
 	background-color: white;
+	margin-top: 40px;
 	border-top: 1px solid #004466;
 	border-bottom: 1px solid #004466;
 }
@@ -458,9 +458,55 @@ body {
 	width: 172px;
 	padding: 0;
 	margin: 0;
-	font-family: "sf";
-	font-size: 30px;
+	font-family: "rale";
+	font-size: 14px;
 	color: #004466;
+	border: 0;
+}
+
+.middle-info-carousel .slick-dots #slick-slide20 button {
+	visibility: hidden;
+}
+
+.middle-info-carousel .slick-dots #slick-slide20 button:after {
+	visibility: visible;
+	content: 'Les entreprises';
+}
+
+.middle-info-carousel .slick-dots #slick-slide21 button {
+	visibility: hidden;
+}
+
+.middle-info-carousel .slick-dots #slick-slide21 button:after {
+	visibility: visible;
+	content: 'Les centres commerciaux';
+}
+
+.middle-info-carousel .slick-dots #slick-slide22 button {
+	visibility: hidden;
+}
+
+.middle-info-carousel .slick-dots #slick-slide22 button:after {
+	visibility: visible;
+	content: 'Les collectivités';
+}
+
+.middle-info-carousel .slick-dots #slick-slide23 button {
+	visibility: hidden;
+}
+
+.middle-info-carousel .slick-dots #slick-slide23 button:after {
+	visibility: visible;
+	content: 'Les écoles';
+}
+
+.middle-info-carousel .slick-dots #slick-slide24 button {
+	visibility: hidden;
+}
+
+.middle-info-carousel .slick-dots #slick-slide24 button:after {
+	visibility: visible;
+	content: 'Les parents';
 }
 
 .bottom-contact {
