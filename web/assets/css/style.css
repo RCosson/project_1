@@ -400,11 +400,67 @@ body {
 }
 
 .middle-info-carousel {
-	background-color: silver;
+	background-color: white;
+	border-top: 1px solid #004466;
+	border-bottom: 1px solid #004466;
+}
+
+.middle-info-carousel .slick-dots {
+	list-style: none;
 }
 
 .middle-info-slide {
-	
+	padding: 20px;
+}
+
+.middle-info-left {
+	width: 400px;
+}
+
+.middle-info-left h1 {
+	font-family: "house";
+	font-size: 24px;
+	color: #D1423D;
+}
+
+.middle-info-left p {
+	font-family: "rale";
+	font-size: 14px;
+	color: #004466;
+}
+
+.middle-info-left ul {
+	list-style-image: url('/assets/img/bottom-carousel/etoile-puce-rouge.png');
+}
+
+.middle-info-left li {
+	font-family: "rale";
+	font-size: 14px;
+	color: #004466;
+	font-weight: 200;
+}
+
+.middle-info-left li:hover {
+	color: #D1423D;
+}
+
+.middle-info-carousel .slick-dots {
+	display: flex;
+	list-style: none;
+	width: 860px;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	position: absolute;
+}
+
+.middle-info-carousel .slick-dots button {
+	width: 172px;
+	padding: 0;
+	margin: 0;
+	font-family: "sf";
+	font-size: 30px;
+	color: #004466;
 }
 
 .bottom-contact {
@@ -429,5 +485,5 @@ body {
 .bottom-line {
 	height: 80px;
 	width: 100%;
-	background-color: rgb(1,80,119);
+	background-image: url("/assets/img/footer.jpg");
 }

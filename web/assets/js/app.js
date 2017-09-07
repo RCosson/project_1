@@ -16,6 +16,8 @@ $(document).ready(function(){
 	});
 	$(".middle-info-carousel").slick({
 		slidesToScroll: 1,
+		nextArrow: false,
+		prevArrow: false,
 		autoplay: false,
 		dots: true,
 	});
