@@ -444,74 +444,49 @@ body {
 	color: #D1423D;
 }
 
-.middle-info-carousel .slick-dots {
-	display: flex;
-	list-style: none;
-	width: 860px;
-	margin: 0;
-	padding: 0;
-	top: 0;
-	position: absolute;
-}
-
-.middle-info-carousel .slick-dots button {
-	width: 172px;
-	padding: 0;
-	margin: 0;
-	font-family: "rale";
-	font-size: 14px;
-	color: #004466;
-	border: 0;
-}
-
-.middle-info-carousel .slick-dots #slick-slide20 button {
-	visibility: hidden;
-}
-
-.middle-info-carousel .slick-dots #slick-slide20 button:after {
-	visibility: visible;
-	content: 'Les entreprises';
-}
-
-.middle-info-carousel .slick-dots #slick-slide21 button {
-	visibility: hidden;
-}
-
-.middle-info-carousel .slick-dots #slick-slide21 button:after {
-	visibility: visible;
-	content: 'Les centres commerciaux';
-}
-
-.middle-info-carousel .slick-dots #slick-slide22 button {
-	visibility: hidden;
-}
-
-.middle-info-carousel .slick-dots #slick-slide22 button:after {
-	visibility: visible;
-	content: 'Les collectivités';
-}
-
-.middle-info-carousel .slick-dots #slick-slide23 button {
-	visibility: hidden;
-}
-
-.middle-info-carousel .slick-dots #slick-slide23 button:after {
-	visibility: visible;
-	content: 'Les écoles';
-}
-
-.middle-info-carousel .slick-dots #slick-slide24 button {
-	visibility: hidden;
-}
-
-.middle-info-carousel .slick-dots #slick-slide24 button:after {
-	visibility: visible;
-	content: 'Les parents';
-}
-
 .bottom-contact {
 	height: 571px;
 	background-color: silver;
+}
+
+.nav-slide img {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.nav-slide {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.entr {
+	max-width: 56px;
+	max-height: 65px;
+}
+
+.com {
+	max-width: 47px;
+	max-height: 67px;
+}
+
+.collec {
+	max-width: 48px;
+	max-height: 62px;
+}
+
+.ecoles {
+	max-width: 67px;
+	max-height: 64px;
+}
+
+.parents {
+	max-width: 42px;
+	max-height: 56px;
+}
+
+.hidden-arrow {
+	visibility: hidden;
 }
 
 .bottom-illustration {
