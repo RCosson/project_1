@@ -6,15 +6,7 @@ $(document).ready(function(){
 		/*autoplay: true,
 		autoplaySpeed: 5000,*/
 		dots: true,
-		responsive: [
-    {
-      breakpoint: 736,
-      settings: {
-        nextArrow: false,
-        prevArrow: false,
-      }
-    }
-  ]
+		placeholders: false,
 	});
 	$(".top-info-carousel").slick({
 		slidesToScroll: 1,

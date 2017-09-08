@@ -263,6 +263,10 @@ body {
 	margin-right: auto;
 }
 
+.splitter2 {
+	display: none;
+}
+
 .top-info-carousel {
 	width: 860px;
 	height: 390px;
