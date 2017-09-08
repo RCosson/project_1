@@ -13,7 +13,14 @@ $(document).ready(function(){
 		prevArrow: false,
 		autoplay: false,
 		speed: 275,
-		dots: true,
+		dots: false,
+		asNavFor: '.slider-nav-top'
+	});
+	$('.slider-nav-top').slick({
+ 		slidesToShow: 5,
+ 		slidesToScroll: 1,
+		asNavFor: '.top-info-carousel',
+ 		focusOnSelect: true,
 	});
 	$('.middle-info-carousel').slick({
  		slidesToShow: 1,
@@ -27,7 +34,6 @@ $(document).ready(function(){
  		slidesToShow: 5,
  		slidesToScroll: 1,
 		asNavFor: '.middle-info-carousel',
- 		dots: true,
  		focusOnSelect: true,
 	});
 });

@@ -39,6 +39,41 @@ body {
 	margin-left: 155px;
 }
 
+.main-menu {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.main-menu a {
+	color: #015078;
+	padding-bottom: 2px;
+}
+
+.main-menu:hover .underline-main {
+	visibility: visible;
+}
+
+.underline-main {
+	visibility: hidden;
+}
+
+.main1 {
+	width: 120px;
+	height: 6px;
+}
+
+.main2 {
+	width: 78px;
+	height: 4px;
+}
+
+.main3 {
+	width: 55px;
+	height: 3px;
+}
+
 .top-nav ul {
 	display: flex;
 	flex-direction: row;
@@ -58,20 +93,6 @@ body {
 	font-size: 16px;
 }
 
-.main-menu a {
-	color: #015078;
-}
-
-.top-nav .main-menu a:hover {
-	border-image: url("../img/traits-menu.png") 7;
-	border-style: solid;
-	border-width: 7px;
-	border-left: 0;
-	border-right: 0;
-	border-top: 0;
-}
-
-
 .red-square {
 	border: 2px solid #D1423D;
 	border-radius: 5px;
@@ -86,7 +107,6 @@ body {
 .slide {
 	width: 1280px;
 	position: relative;
-	background-color: teal;
 	display: block;
 }
 
@@ -194,7 +214,7 @@ body {
 	z-index: 1000;
 }
 
-.next-arrow:hover, .prev-arrow:hover, .slick-dots li button, .top-info-carousel .slick-dots li {
+.next-arrow, .prev-arrow, .slick-dots li button, .nav-top-slider p {
 	cursor: pointer;
 }
 
@@ -206,8 +226,10 @@ body {
 }
 
 .top-info {
-	background-color: rgb(227,233,225);
-	margin-bottom: 50px;
+	background-image: url("/assets/img/background_bleu_clair.png");
+	padding-bottom: 54px;
+	margin-bottom: 20px;
+	height: 672px;
 }
 
 .top-info-static {
@@ -241,12 +263,36 @@ body {
 .top-info-carousel {
 	width: 860px;
 	height: 390px;
-	background-color: rgb(227,233,225);
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.top-info-carousel .slick-dots .slick-active button {
+.slider-nav-top {
+	margin-left: 210px;
+	margin-right: 210px;
+	text-align: center;
+	color: #004466;
+}
+
+.nav-top-slider p {
+	margin-right: 20px;
+	width: 140px;
+	font-family: "rale";
+	font-size: 30px;
+}
+
+.nav-top-slider img {
+	height: 75px;
+	width: 4px;
+	padding-top: 32px;
+	padding-bottom: 20px;
+}
+
+.slider-nav-top .slick-current p {
+	font-weight: bolder;
+}
+
+/*.top-info-carousel .slick-dots .slick-active button {
 	font-weight: bold;
 }
 
@@ -270,17 +316,10 @@ body {
 	text-align: center;
 }
 
-.top-info-carousel .slick-dots li {
-	border-image: url("../img/separateur.png") 5;
-	border-style: solid;
-	border-width: 7px;
-	border-left: 0;
-	border-bottom: 0;
-	border-top: 0;
-}
-
 .top-info-carousel .slick-dots #slick-slide10 button {
 	visibility: hidden;
+	background-image: url("/assets/img/separateur.png");
+	background-repeat: no-repeat;
 }
 
 .top-info-carousel .slick-dots #slick-slide10 button:after {
@@ -290,6 +329,8 @@ body {
 
 .top-info-carousel .slick-dots #slick-slide11 button {
 	visibility: hidden;
+	background-image: url("/assets/img/separateur.png");
+	background-repeat: no-repeat;
 }
 
 .top-info-carousel .slick-dots #slick-slide11 button:after {
@@ -299,6 +340,8 @@ body {
 
 .top-info-carousel .slick-dots #slick-slide12 button {
 	visibility: hidden;
+	background-image: url("/assets/img/separateur.png");
+	background-repeat: no-repeat;
 }
 
 .top-info-carousel .slick-dots #slick-slide12 button:after {
@@ -308,6 +351,8 @@ body {
 
 .top-info-carousel .slick-dots #slick-slide13 button {
 	visibility: hidden;
+	background-image: url("/assets/img/separateur.png");
+	background-repeat: no-repeat;
 }
 
 .top-info-carousel .slick-dots #slick-slide13 button:after {
@@ -317,19 +362,20 @@ body {
 
 .top-info-carousel .slick-dots #slick-slide14 button {
 	visibility: hidden;
+	background-image: url("/assets/img/separateur.png");
+	background-repeat: no-repeat;
 }
 
 .top-info-carousel .slick-dots #slick-slide14 button:after {
 	visibility: visible;
 	content: 'Groupe Sodexo';
-}
+}*/
 
 .slick-initialized .slick-slide {
 	display: flex;
 }
 
 .top-info-slide {
-	padding-top: 160px;
 	display: flex;
 	flex-direction: row;
 }
@@ -337,6 +383,26 @@ body {
 .top-info-slide img {
 	height: 210px;
 	width: 290px;
+	margin-right: 60px;
+	margin-left: 50px;
+}
+
+.sodexo {
+	display: flex;
+	flex-direction: column;
+	margin-right: 60px;
+	margin-left: 50px;
+}
+
+.sodexo img {
+	height: 42px;
+	width: 130px;
+}
+
+.sodexo p {
+	font-family: "rale";
+	color: #004466;
+	width: 256px;
 }
 
 .custom-list {
@@ -564,14 +630,6 @@ body {
 	padding-bottom: 30px;
 }
 
-.bottom-illustration {
-	height: 635px;
-	width: 1024px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: grey;
-}
-
 .interaction-buttons {
 	position: relative;
 	display: flex;
@@ -608,7 +666,10 @@ body {
 
 .bottom-contact {
 	height: 571px;
-	background-color: #004466;
+	background-image: url("/assets/img/background_bleu_fonce.png");
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: row;
 }
 
 .bottom-contact-left {
@@ -643,10 +704,48 @@ body {
 	margin-bottom: 81px;
 }
 
+.illu {
+	margin-top: 50px;
+}
+
+.write-us-button {
+	position: relative;
+	background-image: url("/assets/img/btn_ecrivez_nous.png");
+	background-repeat: no-repeat;
+	z-index: 1000;
+	width: 280px;
+	height: 80px;
+	bottom: 126px;
+	left: 80px;
+}
+
+.write-us-button:hover {
+	background-image: url("/assets/img/btn_ecrivez_nous_rollover.png");
+}
+
+.bottom-illustration {
+	height: 635px;
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+}
+
 .bottom-menu {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	padding-bottom: 5px;
+}
+
+.bottom-menu a {
+	font-family: "sf";
+	color: #015078;
+	text-decoration: none;
+}
+
+.bottom-menu p {
+	margin: 0;
 }
 
 .bottom-line {
