@@ -14,7 +14,6 @@
 }
 
 body {
-	background-color: black;
 	margin: 0;
 }
 
@@ -27,6 +26,7 @@ body {
 
 .logo {
 	margin: 5px;
+	margin-top: 8px;
 	padding: 10px;
 }
 
@@ -236,6 +236,7 @@ body {
 	margin-left: 126px;
 	margin-right: 126px;
 	padding-top: 34px;
+	text-align: center;
 }
 
 .top-info-static h1 {
@@ -258,6 +259,8 @@ body {
 	width: 634px;
 	color: #015078;
 	font-weight: 500;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .top-info-carousel {
@@ -752,5 +755,6 @@ body {
 	height: 80px;
 	width: 100%;
 	background-image: url("/assets/img/footer.jpg");
+	background-repeat: repeat;
+	background-size: cover;
 }
-

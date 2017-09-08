@@ -3,9 +3,18 @@ $(document).ready(function(){
 		nextArrow: '<img class="next-arrow" src="assets/img/top-carousel/fleche_slide_droite.png">',
   		prevArrow: '<img class="prev-arrow" src="assets/img/top-carousel/fleche_slide_gauche.png">',
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 5000,
+		/*autoplay: true,
+		autoplaySpeed: 5000,*/
 		dots: true,
+		responsive: [
+    {
+      breakpoint: 736,
+      settings: {
+        nextArrow: false,
+        prevArrow: false,
+      }
+    }
+  ]
 	});
 	$(".top-info-carousel").slick({
 		slidesToScroll: 1,
