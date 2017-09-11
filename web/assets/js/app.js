@@ -76,4 +76,16 @@ $(document).ready(function(){
 		asNavFor: '.middle-info-carousel',
  		focusOnSelect: true,
 	});
+	$('.dropdown-resp-button').click(function(){
+		$('.dropdown-resp').slideToggle('slow', function(){
+
+		});
+		$('.dropdown-resp').toggleClass('none');
+	});
+	$('.options').click(function(){
+		$('.dropdown-resp').slideToggle('slow', function(){
+
+		});
+		$('.dropdown-resp').toggleClass('none');
+	});
 });

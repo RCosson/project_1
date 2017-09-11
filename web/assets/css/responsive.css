@@ -60,7 +60,7 @@
 
 	.carousel-top .slick-dots {
 		left: 90px;
-		top: 440px;
+		top: 455px;
 	}
 
 	.main-menu, .red-square {
@@ -90,11 +90,13 @@
 		width: 75%;
     	height: 57%;
 		margin: auto;
+		margin-top: 148px;
 	}
 
 	.slide-son h1 {
 		line-height: 50px;
 		margin-top: 20px;
+		font-size: 46px;
 	}
 
 	.slide-son p {
@@ -337,7 +339,7 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 
 	.middle-info-carousel .slick-track, .middle-info-carousel .slick-list, .middle-info-carousel .slick-slide, .middle-info-carousel .slide {
@@ -360,7 +362,7 @@
    		max-height: 530px;
 	}
 
-	.resp-arrow {
+	.slick-slide .resp-arrow {
 		display: block;
 		width: auto;
 		height: 32px;
@@ -371,5 +373,13 @@
 
 	.middle-info-slide {
 		padding-top: 0;
+	}
+
+	.dropdown-resp-button {
+		display: block;
+	}
+
+	.dropdown1, .dropdown2 {
+		display: block;
 	}
 }
