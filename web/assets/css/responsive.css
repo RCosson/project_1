@@ -143,10 +143,6 @@
 		margin-bottom: 20px;
 	}
 
-	.slider-nav-top {
-		display: none;
-	}
-
 	.top-carousel-container {
 		max-width: 100%;
 	}
@@ -254,6 +250,7 @@
 	}
 
 	.interaction-buttons {
+		position: initial;
 		flex-direction: column;
 		margin-top: 15px;
 	}
@@ -267,7 +264,7 @@
 	.bottom-contact {
 		background-image: url("/assets/img/background_bleu_fonce_resp.png");
 		background-size: cover;
-		margin-top: 90px;
+		margin-top: 190px;
 		padding-left: 30px;
 		padding-right: 30px;
 		flex-direction: column;
@@ -300,8 +297,6 @@
 	.bottom-contact-right {
 		padding-left: 0;
 	}
-
-
 
 	.illu {
 		display: none;
@@ -337,5 +332,13 @@
 
 	.middle-info-carousel .slick-track, .middle-info-carousel .slick-list, .middle-info-carousel .slick-slide, .middle-info-carousel .slide {
 		max-height: 503px;
+	}
+
+	.slider-nav-top {
+		display: none;
+	}
+
+	.slider-nav-top-2 {
+		display: block;
 	}
 }

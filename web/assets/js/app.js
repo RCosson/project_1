@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	$(".carousel-top").slick({
 		nextArrow: '<img class="next-arrow" src="assets/img/top-carousel/fleche_slide_droite.png">',
   		prevArrow: '<img class="prev-arrow" src="assets/img/top-carousel/fleche_slide_gauche.png">',
@@ -8,7 +9,8 @@ $(document).ready(function(){
 		dots: true,
 		placeholders: false,
 	});
-	$(".top-info-carousel").slick({
+
+	var $carousel1 = $(".top-info-carousel").slick({
 		slidesToScroll: 1,
 		nextArrow: false,
 		prevArrow: false,
@@ -17,12 +19,20 @@ $(document).ready(function(){
 		dots: false,
 		asNavFor: '.slider-nav-top'
 	});
+	var select = $("#select1");
+	$("#select1").change(function(){
+		goTo = select.prop("selectedIndex");
+		console.log( goTo );
+		$carousel1.slick( "goTo", goTo );
+	});
+
 	$('.slider-nav-top').slick({
  		slidesToShow: 5,
  		slidesToScroll: 1,
 		asNavFor: '.top-info-carousel',
  		focusOnSelect: true,
 	});
+
 	$('.middle-info-carousel').slick({
  		slidesToShow: 1,
 		slidesToScroll: 1,
@@ -31,9 +41,17 @@ $(document).ready(function(){
  		speed: 275,
  		asNavFor: '.slider-nav',
 	});
+
 	$('.slider-nav').slick({
  		slidesToShow: 5,
  		slidesToScroll: 1,
+		asNavFor: '.middle-info-carousel',
+ 		focusOnSelect: true,
+	});
+
+	$('.slider-nav-2').slick({
+ 		/*slidesToShow: 5,
+ 		slidesToScroll: 1,*/
 		asNavFor: '.middle-info-carousel',
  		focusOnSelect: true,
 	});

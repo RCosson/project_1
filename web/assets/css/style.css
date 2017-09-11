@@ -782,3 +782,26 @@ body {
 	background-repeat: repeat;
 	background-size: cover;
 }
+
+.slider-nav-2 {
+	display: none;
+}
+
+.slider-nav-top-2 {
+	display: none;
+	-webkit-appearance: none; 
+    -moz-appearance: none;
+    background-image: url("/assets/img/responsive/btn1.png");
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 60px;
+}
+
+.slider-nav-top-2 option {
+	font-family: "sf";
+	letter-spacing: 1px;
+	color: #004466;
+}
