@@ -382,4 +382,12 @@
 	.dropdown1, .dropdown2 {
 		display: block;
 	}
+
+	.upper-quote {
+		display: none;
+	}
+
+	.resp-p {
+		display: block;
+	}
 }
