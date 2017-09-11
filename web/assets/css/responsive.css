@@ -60,7 +60,7 @@
 
 	.carousel-top .slick-dots {
 		left: 90px;
-		top: 390px;
+		top: 440px;
 	}
 
 	.main-menu, .red-square {
@@ -70,7 +70,7 @@
 	.top-info-static {
   	  margin-left: 20px;
   	  margin-right: 20px;
-  	  padding-top: 34px;
+  	  padding-top: 52px;
   	  text-align: left;
 	}
 
@@ -124,9 +124,10 @@
 	.top-info {
 		background-image: url("/assets/img/background_bleu_clair_resp.png");
 		background-size: cover;
-		background-position: 0 -110px;
-		height: 950px;
+		background-position: 0 -64px;
+		height: 1180px;
 		padding-bottom: 0;
+		margin-bottom: 0;
 	}
 
 	.top-info-static {
@@ -141,6 +142,7 @@
 		width: 100%;
 		letter-spacing: 1px;
 		margin-bottom: 20px;
+		line-height: 20px;
 	}
 
 	.top-carousel-container {
@@ -205,6 +207,11 @@
 		width: 100%;
 	}
 
+	.middle-info-upper p {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
 	.middle-info-upper img {
 		height: 11px;
 	}
@@ -215,6 +222,8 @@
 
 	.middle-info-carousel {
 		border: 0;
+		padding-bottom: 0;
+		padding-top: 5px;
 	}
 
 	.middle-info .slick-initialized .slick-slide {
@@ -247,12 +256,13 @@
 	.middle-info-left li {
 		letter-spacing: 1px;
 		margin-bottom: 20px;
+		list-style-position:inside;
 	}
 
 	.interaction-buttons {
 		position: initial;
 		flex-direction: column;
-		margin-top: 15px;
+		margin-top: 10px;
 	}
 
 	.contact-button, .activity-button {
@@ -264,7 +274,7 @@
 	.bottom-contact {
 		background-image: url("/assets/img/background_bleu_fonce_resp.png");
 		background-size: cover;
-		margin-top: 190px;
+		margin-top: 276px;
 		padding-left: 30px;
 		padding-right: 30px;
 		flex-direction: column;
@@ -331,7 +341,7 @@
 	}
 
 	.middle-info-carousel .slick-track, .middle-info-carousel .slick-list, .middle-info-carousel .slick-slide, .middle-info-carousel .slide {
-		max-height: 503px;
+		max-height: 530px;
 	}
 
 	.slider-nav-top {
@@ -340,5 +350,26 @@
 
 	.slider-nav-top-2 {
 		display: block;
+	}
+
+	.slider-nav-2 {
+		display: block;
+	}
+
+	.carousel-top, .slick-track, .slick-list, .slick-slide, .slide {
+   		max-height: 530px;
+	}
+
+	.resp-arrow {
+		display: block;
+		width: auto;
+		height: 32px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 5px;
+	}
+
+	.middle-info-slide {
+		padding-top: 0;
 	}
 }

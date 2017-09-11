@@ -785,6 +785,15 @@ body {
 
 .slider-nav-2 {
 	display: none;
+	-webkit-appearance: none; 
+    -moz-appearance: none;
+    background-image: url("/assets/img/responsive/btn2.png");
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 266px;
+    height: 60px;
 }
 
 .slider-nav-top-2 {
@@ -796,12 +805,75 @@ body {
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    width: 300px;
+    width: 266px;
     height: 60px;
 }
 
-.slider-nav-top-2 option {
+.slider-nav-top-2, .slider-nav-2 {
 	font-family: "sf";
 	letter-spacing: 1px;
+	font-size: 17px;
+	padding-left: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.slider-nav-top-2 {
 	color: #004466;
+}
+
+.slider-nav-2 {
+	color: #D1423D;
+	padding-left: 20px;
+}
+
+.slider-nav-top-2 option. .slider-nav-2 option {
+	font-family: "sf";
+	letter-spacing: 1px;
+	font-size: 17px;
+	border: 0;
+	background-color: #E4E9F6;
+}
+
+.slider-nav-top-2 option {
+	color: #004466;
+}
+
+.slider-nav-2 option {
+	color: #D1423D;
+}
+
+.dropdown1 {
+	position: relative;
+	left: 270px;
+	bottom: 40px;
+}
+
+.dropdown2 {
+	position: relative;
+	left: 270px;
+	bottom: 40px;
+}
+
+.resp-arrow {
+	display: none;
+}
+
+.dropdown-resp-button {
+	position: absolute;
+	top: 28px;
+	right: 28px;
+	width: 50px;
+	height: 30px;
+	background-image: url("/assets/img/responsive/dropdown.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.dropdown-resp-button:hover {
+	cursor: pointer;
+}
+
+.dropdown-resp {
+	
 }

@@ -17,11 +17,22 @@ $(document).ready(function(){
 		autoplay: false,
 		speed: 275,
 		dots: false,
-		asNavFor: '.slider-nav-top'
+		asNavFor: '.slider-nav-top',
+		responsive: [
+    {
+      breakpoint: 736,
+      settings: {
+        draggable: false,
+		fade: true,
+		swipe: false,
+		touchMove: false,
+      }
+    }
+  ]
 	});
-	var select = $("#select1");
+	var select1 = $("#select1");
 	$("#select1").change(function(){
-		goTo = select.prop("selectedIndex");
+		goTo = select1.prop("selectedIndex");
 		console.log( goTo );
 		$carousel1.slick( "goTo", goTo );
 	});
@@ -33,25 +44,35 @@ $(document).ready(function(){
  		focusOnSelect: true,
 	});
 
-	$('.middle-info-carousel').slick({
+	var $carousel2 = $('.middle-info-carousel').slick({
  		slidesToShow: 1,
 		slidesToScroll: 1,
  		arrows: false,
  		dots: false,
  		speed: 275,
  		asNavFor: '.slider-nav',
+ 		responsive: [
+    {
+      breakpoint: 736,
+      settings: {
+        draggable: false,
+		fade: true,
+		swipe: false,
+		touchMove: false,
+      }
+    }
+  ]
+	});
+	var select2 = $("#select2");
+	$("#select2").change(function(){
+		goTo = select2.prop("selectedIndex");
+		console.log( goTo );
+		$carousel2.slick( "goTo", goTo );
 	});
 
 	$('.slider-nav').slick({
  		slidesToShow: 5,
  		slidesToScroll: 1,
-		asNavFor: '.middle-info-carousel',
- 		focusOnSelect: true,
-	});
-
-	$('.slider-nav-2').slick({
- 		/*slidesToShow: 5,
- 		slidesToScroll: 1,*/
 		asNavFor: '.middle-info-carousel',
  		focusOnSelect: true,
 	});
