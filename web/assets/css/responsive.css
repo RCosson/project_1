@@ -7,6 +7,7 @@
 	.top-nav {
 		margin-left: 0;
 		margin-right: 0;
+		margin-bottom: 0;
 	}
 
 	.carousel-top {
@@ -57,8 +58,9 @@
 		visibility: hidden;
 	}
 
-	.carousel-top .slide {
-
+	.carousel-top .slick-dots {
+		left: 90px;
+		top: 390px;
 	}
 
 	.main-menu, .red-square {
@@ -82,12 +84,12 @@
 
 	.slide-son {
 		background-image: url("/assets/img/responsive/contour_texte.png");
-		background-size: cover;
+		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: 1px 1px;
 		width: 75%;
     	height: 57%;
-		margin: 12px;
+		margin: auto;
 	}
 
 	.slide-son h1 {
@@ -116,49 +118,224 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 24px;
+	}
+
+	.top-info {
+		background-image: url("/assets/img/background_bleu_clair_resp.png");
+		background-size: cover;
+		background-position: 0 -110px;
+		height: 950px;
+		padding-bottom: 0;
+	}
+
+	.top-info-static {
+		margin-top: 30px;
+	}
+
+	.top-info-static h1 {
+		font-size: 39px;
 	}
 
 	.top-info-static p {
 		width: 100%;
 		letter-spacing: 1px;
+		margin-bottom: 20px;
 	}
 
 	.slider-nav-top {
 		display: none;
 	}
 
-	.top-info-slide {
-		flex-direction: column;
+	.top-carousel-container {
+		max-width: 100%;
 	}
 
-	.top-info-slide img {
+	.top-info-slide {
+		flex-direction: column;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
 	.top-info-slide ul {
+		width: 75%;
+	}
+
+	.top-info-carousel {
+		width: auto;
+	}
+
+	.top-info-slide img {
 		margin-left: auto;
 		margin-right: auto;
+		margin-bottom: 20px;
+	}
+
+	.top-info-slide ul {
+		margin-left: auto;
+		margin-right: auto;
+		width: 330px;
+	}
+
+	.top-info-slide li {
+		width: 320px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+	}
+
+	.slick-list {
+		padding-bottom: 30px;
 	}
 
 	.slider-nav {
 		display: none;
 	}
 
+	.middle-info {
+		width: 100%;
+	}
+
+	.middle-info-upper {
+		margin-left: 31px;
+		margin-right: 31px;
+	}
+
+	.middle-info-upper h1 {
+		font-size: 38px;
+		line-height: 40px;
+	}
+
+	.middle-info-upper h1, .middle-info-upper img, .middle-info-upper p {
+		width: 100%;
+	}
+
+	.middle-info-upper img {
+		height: 11px;
+	}
+
+	.middle-info-upper p {
+		letter-spacing: 1px;
+	}
+
 	.middle-info-carousel {
+		border: 0;
+	}
+
+	.middle-info .slick-initialized .slick-slide {
 		flex-direction: column;
 	}
 
+	.middle-info-left ul, .middle-info-left li, .middle-info-left p {
+		width: 290px;
+	}
+
+	.middle-info-left {
+		width: auto;
+		text-align: center;
+	}
+
+	.middle-info-left p {
+		letter-spacing: 1px;
+		line-height: 20px;
+		margin-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.middle-info-left ul {
+		padding-left: 0;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.middle-info-left li {
+		letter-spacing: 1px;
+		margin-bottom: 20px;
+	}
+
+	.interaction-buttons {
+		flex-direction: column;
+		margin-top: 15px;
+	}
+
+	.contact-button, .activity-button {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+
 	.bottom-contact {
-		/*width: 100%;*/
+		background-image: url("/assets/img/background_bleu_fonce_resp.png");
+		background-size: cover;
+		margin-top: 90px;
+		padding-left: 30px;
+		padding-right: 30px;
+		flex-direction: column;
+		height: 595px;
+	}
+
+	.kids_illu {
 		display: none;
+	}
+
+	.kids_illu_2 {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.bottom-contact-left {
+		padding-left: 0;
+	}
+
+	.bottom-contact-left .p-margin {
+		margin-bottom: 0;
+	}
+
+	.bottom-contact-left p {
+		width: 330px;
+		letter-spacing: 1px;
+		line-height: 20px;
 	}
 
 	.bottom-contact-right {
 		padding-left: 0;
 	}
 
-	.bottom-illustration {
+
+
+	.illu {
 		display: none;
+	}
+
+	.write-us {
+		width: 100%;
+	}
+
+	.write-us-button {
+		margin-top: 24px;
+		position: initial;
+		margin-left: auto;
+		margin-right: auto;
+		background-position: center;
+	}
+
+	.bottom-illustration {
+		width: 100%;
+		height: auto;
+	}
+
+	.bottom-illu {
+		display: none;
+	}
+
+	.bottom-illu-2 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 10px;
+	}
+
+	.middle-info-carousel .slick-track, .middle-info-carousel .slick-list, .middle-info-carousel .slick-slide, .middle-info-carousel .slide {
+		max-height: 503px;
 	}
 }

@@ -101,6 +101,14 @@ body {
 	padding: 10px;
 }
 
+.carousel-top, .top-info-carousel, .slider-nav-top, .middle-info-carousel, .slider-nav {
+	visibility: hidden;
+}
+
+.slick-initialized {
+	visibility: visible;
+}
+
 .carousel-top, .slick-track, .slick-list, .slick-slide, .slide {
 	max-height: 410px;
 }
@@ -227,9 +235,10 @@ body {
 
 .top-info {
 	background-image: url("/assets/img/background_bleu_clair.png");
-	padding-bottom: 54px;
+	background-repeat: no-repeat;
 	margin-bottom: 20px;
 	height: 672px;
+	padding-bottom: 54px;
 }
 
 .top-info-static {
@@ -378,7 +387,7 @@ body {
 	content: 'Groupe Sodexo';
 }*/
 
-.slick-initialized .slick-slide {
+.slider-nav-top .slick-slide, .slick-initialized .slick-slide {
 	display: flex;
 }
 
@@ -463,12 +472,14 @@ body {
 
 .middle-info-upper p {
 	font-family: "sf";
+	letter-spacing: 1px;
 	width: 518px;
 	font-size: 14px;
 	color: #004466;
 }
 
 .middle-info-p {
+	margin-top: 10px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -478,6 +489,8 @@ body {
 	background-color: white;
 	border-top: 1px solid #004466;
 	border-bottom: 1px solid #004466;
+	padding-top: 15px;
+	padding-bottom: 25px;
 }
 
 .middle-info-carousel .slick-dots {
@@ -534,7 +547,7 @@ body {
 	flex-direction: column;
 	text-align: center;
 	width: 174px;
-	height: 140px;
+	height: 155px;
 }
 
 .nav-slide p {
@@ -603,11 +616,10 @@ body {
 
 .nav-slide-icon {
     width: 70px;
-    height: 110px;
+    height: 68px;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
-    padding-top: 64px;
 }
 
 .hidden-arrow {
@@ -632,9 +644,9 @@ body {
 	width: 10px;
 	height: 26px;
 }
-*
+
 .slick-track {
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 
 .interaction-buttons {
@@ -707,8 +719,12 @@ body {
 	letter-spacing: 1px;
 }
 
-.bottom-contact-left p:nth-child(2n) {
+.bottom-contact-left .p-margin {
 	margin-bottom: 81px;
+}
+
+.kids_illu_2 {
+	display: none;
 }
 
 .illu {
@@ -736,6 +752,10 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	background-color: white;
+}
+
+.bottom-illu-2 {
+	display: none;
 }
 
 .bottom-menu {
