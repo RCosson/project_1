@@ -59,7 +59,7 @@
 	}
 
 	.carousel-top .slick-dots {
-		left: 90px;
+		left: 84px;
 		top: 455px;
 	}
 
@@ -76,6 +76,7 @@
 
 	.top-info-static h1 {
 		line-height: 50px;
+		margin-left: 0;
 	}
 
 	.top-info-static h1:nth-child(1n) {
@@ -127,7 +128,7 @@
 		background-image: url("/assets/img/background_bleu_clair_resp.png");
 		background-size: cover;
 		background-position: 0 -64px;
-		height: 1180px;
+		height: 1215px;
 		padding-bottom: 0;
 		margin-bottom: 0;
 	}
@@ -389,5 +390,9 @@
 
 	.resp-p {
 		display: block;
+	}
+
+	.decor-img {
+		display: none;
 	}
 }

@@ -134,7 +134,7 @@ body {
     flex-direction: row;
     position: absolute;
     top: 350px;
-    left: 538px;
+    left: 542px;
 }
 
 .carousel-top .slick-dots li button {
@@ -145,6 +145,7 @@ body {
 	text-indent: -9999px;
     overflow:hidden;
     margin: 2px;
+    width: 20px;
 }
 
 .carousel-top .slick-dots .slick-active button {
@@ -250,6 +251,8 @@ body {
 }
 
 .top-info-static h1 {
+	text-align: left;
+	margin-left: 123px;
 	margin-top: 0;
 	margin-bottom: 0;
 	font-family: "house";
@@ -295,7 +298,7 @@ body {
 	margin-right: 20px;
 	width: 140px;
 	font-family: "rale";
-	font-size: 30px;
+	font-size: 28px;
 }
 
 .nav-top-slider img {
@@ -514,6 +517,8 @@ body {
 }
 
 .middle-info-left p {
+	letter-spacing: 1px;
+	line-height: 20px;
 	font-family: "rale";
 	font-size: 14px;
 	color: #004466;
@@ -524,10 +529,12 @@ body {
 }
 
 .middle-info-left li {
+	letter-spacing: 1px;
 	font-family: "rale";
 	font-size: 14px;
 	color: #004466;
 	font-weight: 200;
+	margin-bottom: 10px;
 }
 
 .middle-info-left li:hover {
@@ -536,6 +543,7 @@ body {
 
 .slider-nav {
 	margin: 10px;
+	display: flex;
 }
 
 .nav-slide img {
@@ -549,10 +557,12 @@ body {
 	text-align: center;
 	width: 174px;
 	height: 155px;
+	margin-top: auto;
 }
 
 .nav-slide p {
 	font-family: "sf";
+	line-height: 12px;
 }
 
 /*entreprises centres-c collec ecoles parents*/
@@ -621,6 +631,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
+    background-position: bottom;
 }
 
 .hidden-arrow {
@@ -685,6 +696,7 @@ body {
 }
 
 .bottom-contact {
+	margin-top: 30px;
 	height: 571px;
 	background-image: url("/assets/img/background_bleu_fonce.png");
 	background-repeat: no-repeat;
@@ -806,6 +818,7 @@ body {
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 15px;
     width: 266px;
     height: 60px;
 }
@@ -848,14 +861,14 @@ body {
 	display: none;
 	position: relative;
 	left: 270px;
-	bottom: 40px;
+	bottom: 50px;
 }
 
 .dropdown2 {
 	display: none;
 	position: relative;
 	left: 270px;
-	bottom: 40px;
+	bottom: 36px;
 }
 
 .dropdown-resp-button {
@@ -951,4 +964,56 @@ body {
 
 .resp-p {
 	display: none;
+}
+
+.decor-slider-1 {
+	background-image: url("/assets/img/middle-carousel/decor_1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: 165px;
+	top: 700px;
+	width: 200px;
+	height: 200px;
+}
+
+.decor-slider-2 {
+	background-image: url("/assets/img/middle-carousel/decor_2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: 169px;
+	top: 917px;
+	width: 200px;
+	height: 200px;
+}
+
+.decor-slider-3 {
+	background-image: url("/assets/img/middle-carousel/decor_3.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: 1192px;
+	top: 700px;
+	width: 200px;
+	height: 200px;
+}
+
+.decor-slider-4 {
+	background-image: url("/assets/img/middle-carousel/decor_4.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	left: 1192px;
+	top: 917px;
+	width: 200px;
+	height: 200px;
+}
+
+.middle-info-carousel .slick-slide .middle-info-img {
+	margin-left: 20px;
+	height: 230px;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
