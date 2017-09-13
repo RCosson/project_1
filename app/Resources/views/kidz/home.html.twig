@@ -14,9 +14,9 @@
 	  <div class="top-nav">
 	  	<div class="logo"><img src="assets/img/logo.png"></div>
 	  	<ul>
-	  		<li class="main-menu"><a href="#about">Qui sommes-nous ?</a><img class="underline-main main1" src="assets/img/traits-menu.png"></li>
-	  		<li class="main-menu"><a href="#offers">Nos offres</a><img class="underline-main main2" src="assets/img/traits-menu.png"></li>
-	  		<li class="main-menu"><a href="#contact">Contact</a><img class="underline-main main3" src="assets/img/traits-menu.png"></li>
+	  		<li class="main-menu"><a class="menu" href="#about">Qui sommes-nous ?</a><img class="underline-main main1" src="assets/img/traits-menu.png"></li>
+	  		<li class="main-menu"><a class="menu" href="#offers">Nos offres</a><img class="underline-main main2" src="assets/img/traits-menu.png"></li>
+	  		<li class="main-menu"><a class="menu" href="#contact">Contact</a><img class="underline-main main3" src="assets/img/traits-menu.png"></li>
 	  		<li><a class="red-square" href="#activity">Réserver une activité</a></li>
 	  	</ul>
 	  	<div class="top-nav-resp">
@@ -25,43 +25,43 @@
 	  </div>
 	  <div class="dropdown-resp none">
 	  		<ul>
-	  			<li><a class="options" href="#about">Qui sommes-nous ?</a></li>
-	  			<li><a class="options" href="#offers">Nos offres</a></li>
-	  			<li><a class="options" href="#contact">Contact</a></li>
-	  			<li><a class="options red" href="#activity">Réserver une activité</a></li>
+	  			<li><a class="options menu" href="#about">Qui sommes-nous ?</a></li>
+	  			<li><a class="options menu" href="#offers">Nos offres</a></li>
+	  			<li><a class="options menu" href="#contact">Contact</a></li>
+	  			<li><a class="options menu red" href="#activity">Réserver une activité</a></li>
 	  		</ul>
 	  </div>
 	  <div class="carousel-top">
 	  	<div class="slide slide1">
-	  	<img src="assets/img/top-carousel/visuel_1.jpg">
+	  	<img class="top-img" src="assets/img/top-carousel/visuel_1.jpg">
 	  		<div class="slide-son slide-son-1">
 	  			<h1>Pour les Entreprises</h1>
 	  			<p>Nos solutions sur-mesure pour simplifier le quotidien de vos salariés-parents : Journées parentalité, stages vacances,…</p>
 	  		</div>
 	  	</div>
 	  	<div class="slide slide2">
-	  	<img src="assets/img/top-carousel/visuel_2.jpg">
+	  	<img class="top-img" src="assets/img/top-carousel/visuel_2.jpg">
 	  		<div class="slide-son slide-son-2">
 	  			<h1>Pour les Centres Commerciaux</h1>
 	  			<p>Nos espaces enfants pour permettre à vos clients de shopper librement : animations permanentes ou évènementielles.</p>
 	  		</div>
 	  	</div>
 	  	<div class="slide slide3">
-	  	<img src="assets/img/top-carousel/visuel_3.jpg">
+	  	<img class="top-img" src="assets/img/top-carousel/visuel_3.jpg">
 	  		<div class="slide-son slide-son-3">
 	  			<h1>Pour les Collectivités</h1>
 	  			<p>Nos solutions d’accompagnement pour la gestion de vos activités péri et extrascolaires : recrutement, audit, coordination pédagogique,…</p>
 	  		</div>
 	  	</div>
 	  	<div class="slide slide4">
-	  	<img src="assets/img/top-carousel/visuel_4.jpg">
+	  	<img class="top-img" src="assets/img/top-carousel/visuel_4.jpg">
 	  		<div class="slide-son slide-son-4">
 	  			<h1>Pour les Écoles</h1>
 	  			<p>Nos ateliers ludo-éducatifs pour compléter votre offre périscolaire : Théâtre, Autour de l’alimentation, Les petits scientifiques,…</p>
 	  		</div>
 	  	</div>
 	  	<div class="slide slide5">
-	  	<img src="assets/img/top-carousel/visuel_5.jpg">
+	  	<img class="top-img" src="assets/img/top-carousel/visuel_5.jpg">
 	  		<div class="slide-son slide-son-5">
 	  			<h1>Pour les Parents</h1>
 	  			<p>Nos activités d’éveil et de loisirs pour vos enfants de 0 à 12 ans : Anniversaires, stages vacances, ateliers hebdomadaires (Initiation à l’anglais, au cirque, …</p>
@@ -103,7 +103,12 @@
 				<option value="Groupe Sodexo">Groupe Sodexo</option>
 	  		</select>
 	  		<img class="dropdown1" src="assets/img/responsive/fleche1.png">
-	  		<div class="top-info-carousel">
+	  		<div class="top-info-container">
+	  			<div class="deco-left">
+	  				<div class="deco-left1"></div>
+	  				<div class="deco-left2"></div>
+	  			</div>
+	  			<div class="top-info-carousel">
 	  			<div class="top-info-slide">
 	  				<img src="assets/img/middle-carousel/visuel_nos_metiers.jpg">
 	  				<ul class="custom-list">
@@ -147,6 +152,11 @@
 	  				</ul>
 	  			</div>
 	  		</div>
+	  		<div class="deco-right">
+				<div class="deco-right1"></div>
+				<div class="deco-right2"></div>
+			</div>
+	  		</div>
 	  	</div>
 	  	<div class="decor-img decor-slider-1"></div>
 	  	<div class="decor-img decor-slider-2"></div>
@@ -156,7 +166,7 @@
 	  <div id="offers" class="middle-info">
 	  <div class="middle-info-upper">
 	  	<h1>Kids Attitude, vos solutions clé en main</h1>
-	  	<img src="/assets/img/trait_titre_1.png">
+	  	<img src="assets/img/trait_titre_1.png">
 	  	<div class="upper-quote">
 	  		<div class="quote1"></div>
 	  		<p class="middle-info-p">Kids Attitude développe et exploite une offre multi-services de solutions d’accueil de loisirs sur-mesure pour ses clients.</p>
@@ -206,12 +216,12 @@
 	  				<h1>Notre offre Entreprises</h1>
 	  				<p>Vous souhaitez améliorer la qualité de vie de vos collaborateurs-parents, découvrez nos services dédiés aux entreprises.</p>
 	  				<ul>
-	  					<li>Stages vacances</li>
-	  					<li>Journées de la parentalité (family days)</li>
+	  					<li class="square-highlight"><a href="assets/pdf/" download="Kids_stage_entreprise.pdf">Stages vacances</a></li>
+	  					<li class="square-highlight"><a href="assets/pdf/" download="Kids_journée_de_la_parentalité.pdf">Journées de la parentalité (family days)</a></li>
 	  					<li>Évènements spéciaux (arbre de noël, garde d'urgence,...)</li>
 	  				</ul>
 	  			</div>
-	  			<img class="middle-info-img" src="/assets/img/bottom-carousel/visuel_les_entreprises.jpg">
+	  			<img class="middle-info-img" src="assets/img/bottom-carousel/visuel_les_entreprises.jpg">
 	  		</div>
 	  		<div class="middle-info-slide">
 	  			<div class="middle-info-left">
@@ -219,11 +229,11 @@
 	  				<h1>Nos offres Centres Commerciaux</h1>
 	  				<p>Vous souhaitez fidéliser votre clientèle Familles et améliorer votre attractivité, découvrez nos services dédiés aux centres commerciaux.</p>
 	  				<ul>
-	  					<li>Espaces enfants</li>
+	  					<li class="square-highlight"><a href="assets/pdf/" download="Kids_espaces_enfants_centres_commerciaux.pdf">Espaces enfants</a></li>
 	  					<li>Animations enfants lors d'évènements spéciaux</li>
 	  				</ul>
 	  			</div>
-	  			<img class="middle-info-img" src="/assets/img/bottom-carousel/visuel_centre_commerciaux.jpg">
+	  			<img class="middle-info-img" src="assets/img/bottom-carousel/visuel_centre_commerciaux.jpg">
 	  		</div>
 	  		<div class="middle-info-slide">
 	  			<div class="middle-info-left">
@@ -235,7 +245,7 @@
 	  					<li>Conseils en gestion (audit, recrutement, coordination pédagogique, …)</li>
 	  				</ul>
 	  			</div>
-	  			<img class="middle-info-img" src="/assets/img/bottom-carousel/visuel_collectivites.jpg">
+	  			<img class="middle-info-img" src="assets/img/bottom-carousel/visuel_collectivites.jpg">
 	  		</div>
 	  		<div class="middle-info-slide">
 	  			<div class="middle-info-left">
@@ -246,7 +256,7 @@
 	  					<li>Ateliers ludo-éducatifs (théâtre, Autour de l’alimentation, Les petits scientifiques,…)</li>
 	  				</ul>
 	  			</div>
-	  			<img class="middle-info-img" src="/assets/img/bottom-carousel/visuel_ecoles.jpg">
+	  			<img class="middle-info-img" src="assets/img/bottom-carousel/visuel_ecoles.jpg">
 	  		</div>
 	  		<div class="middle-info-slide">
 	  			<div class="middle-info-left">
@@ -259,7 +269,7 @@
 	  					<li>Ateliers hebdomadaires (initiation à l’anglais, au cirque, …)</li>
 	  				</ul>
 	  			</div>
-	  			<img class="middle-info-img" src="/assets/img/bottom-carousel/visuel_parents.png">
+	  			<img class="middle-info-img" src="assets/img/bottom-carousel/visuel_parents.png">
 	  		</div>
 	  	</div>
 	  	<div id="activity" class="interaction-buttons">
@@ -285,11 +295,11 @@
 	  </div>
 	  <div class="bottom-illustration">
 	  		<img class="bottom-illu" src="assets/img/kids_illus_2016_baseline_graine.png">
-	  		<img class="bottom-illu-2" src="assets/img/responsive/bottom-illu-2.png">
 	  </div>
 	  <div class="bottom-menu">
-	  	<p><a href="{{ path('mentions') }}">Mentions légales</a> | <a href="{{ path('credits') }}">Crédits</a></p>
+	  	<p><a href="#">Mentions légales</a> | <a href="#">Crédits</a></p>
 	  </div>
+		<div class="preloader"></div>
   </div>
   <div class="bottom-line">
 	  	

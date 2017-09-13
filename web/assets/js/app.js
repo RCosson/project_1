@@ -88,4 +88,21 @@ $(document).ready(function(){
 		});
 		$('.dropdown-resp').toggleClass('none');
 	});
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	    });
+	    setTimeout(function() {
+    		history.replaceState ("", document.title, e.originalEvent.oldURL);
+			}, 900);
+	});
 });
+
+
+
