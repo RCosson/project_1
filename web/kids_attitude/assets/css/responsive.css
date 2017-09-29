@@ -96,7 +96,7 @@
 		margin-top: 22%;
 	}
 
-	.slide-son h1 {
+	.slide-son h2 {
 		line-height: 50px;
 		margin-top: 20px;
 		font-size: 46px;
@@ -216,12 +216,12 @@
 		margin-right: auto;
 	}
 
-	.middle-info-upper h1 {
+	.middle-info-upper h2 {
 		font-size: 38px;
 		line-height: 40px;
 	}
 
-	.middle-info-upper h1, .middle-info-upper img, .middle-info-upper p {
+	.middle-info-upper h2, .middle-info-upper img, .middle-info-upper p {
 		width: 100%;
 	}
 
